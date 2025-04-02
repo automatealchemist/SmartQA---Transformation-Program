@@ -1,7 +1,7 @@
 # SmartQA - Transformation Program
 
 ## About This Repository  
-This repository serves as a structured knowledge base documenting my learnings, insights, and key takeaways from the **[SmartQA - Transformation Program]** conducted by **Ashok Thiruvengadam**. This is a **two-month program** with **weekly sessions**, focusing on **practical methodologies, tools, and strategies** to enhance software testing efficiency and effectiveness.  
+This repository serves as a structured knowledge base documenting my learnings, insights, and key takeaways from the **SmartQA - Transformation Program** conducted by **Ashok Thiruvengadam**. This is a **two-month program** with **weekly sessions**, focusing on **practical methodologies, tools, and strategies** to enhance software testing efficiency and effectiveness.  
 
 The goal of this repository is to consolidate the knowledge acquired during the program and provide structured notes that can be useful for reference and application in real-world testing scenarios.  
 
