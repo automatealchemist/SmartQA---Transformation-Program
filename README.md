@@ -29,12 +29,12 @@ Regular updates will be made as new insights and learnings emerge.
 ---
 
 ## Additional Resources  
- **SmartQA Website:** [smartqa.community](https://smartqa.academy/)  
+ **SmartQA Website:** [smartqa.academy](https://smartqa.academy/)  
  **Ashok Thiruvengadam's LinkedIn:** [https://in.linkedin.com/in/ashokstag](https://in.linkedin.com/in/ashokstag)  
 
 ---
 
-Feel free to connect if you have any insights or suggestions or would like to discuss SmartQA concepts further!
+## Feel free to connect if you have any insights or suggestions or would like to discuss SmartQA concepts further 
 **Email:** [automatealchemist@gmail.com]
 **LinkedIn:** [https://www.linkedin.com/in/ujjwal-k-singh/]
 
