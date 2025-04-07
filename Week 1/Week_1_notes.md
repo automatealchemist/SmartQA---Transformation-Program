@@ -131,3 +131,171 @@ Checking is a well-formed comparison win in which tools can do as we know what t
 
 >Testing is a brilliant combination of checking for expected outcomes, exploring the whole, looking for the unexpected, uncovering issues, suggesting needs not yet thought of, improving what is done, and sensitizing to prevent issues.
 "Testing" really is a gateway to doing good work and producing systems of value.
+
+*We are often evaluated through tests, especially in school and college, using numbers like marks or percentages. These scores may suggest how intelligent or successful someone is, but they are not complete indicators of a person's true abilities.
+While these evaluations give us a sense of where we stand, they are limited. Real understanding or performance can come from multiple perspectives like logic, user perspective, environment, personality, and so on. Looking at things from many angles offers a more complete picture than just relying on one number or metric.
+Even if we use numbers like 80% to represent coverage or performance, they are just indicators not absolute truths. As we grow older, we begin to realize that life is not about fixed answers or rankings. Everything is more relative and layered than it seems at first glance.*
+
+>Let's focus on the big-picture view of _testing vs checking_, focusing on the **objective behind the activity**, not just the action itself.
+
+They highlight the **difference in roles** between early-stage and late-stage testing—what _I_ do versus what _others_ might do. The scope of what is being tested also varies: it could be something small like a feature, screen, API, or component, or something broader like a complete flow or requirement.
+
+The speaker encourages looking at testing from **multiple points of view**—from a system's perspective, from the end user's angle, and considering the environment as well. They also touch upon **different testing states**—like new features, modified parts, enhancements, and fixes.
+
+At the heart of it all is the **notion of value**. Testing is not just about finding bugs—it is about understanding the objective, knowing your role, and ensuring that value is delivered.
+
+
+|Testing  |Checking  |Objective  |
+|Dev Test(UT,IT ) |QA Test(System Test)  |Role  |
+| in the small |in the large  |Entity  |
+|Functional Test |Non-Functional Test  |What to Find  |
+|By Human |Automated  |How To Find  |
+|System POV	 |User POV  |POV  |
+|New | Modified |State  |
+|Detect | Prevent (Shift-left)  |Value  |
+
+We can refer ourselves as a “TV QA tester” — a playful nod to how roles are sometimes labeled or perceived.
+
+As we see in many organizations, a QA tester is often seen as someone who **designs test cases**, **defines testing approaches**, and performs **execution and evaluation**. It is a mix of **design thinking**, **hands-on activity**, and **emotional involvement**, not just mechanical checking.
+
+The managers or team leads in mind, should be encouraged not to confine testers strictly to roles like designer, automation engineer, or executor. Instead, they urge leaders to give testers the **freedom to explore**, **contribute meaningfully**, and **add value** beyond fixed job titles.
+
+There is significant importance of involving testers **early and late in the development lifecycle**, engaging with analysis, offering suggestions, and maintaining connections with support teams and others—especially in product companies.
+
+Ultimately, the true measure of a tester’s value lies in whether their work positively impacts the **customer’s customer**. The speaker introduces the idea of viewing the QA role as a "smart assurance" role—broad, strategic, and deeply impactful.
+
+They then transition into outlining specific concepts for upcoming sessions. One of the key ideas is around **entity granularity**—shifting the focus of testing from general phrases like "I am testing a feature or use case" to identifying what exactly is being tested at a fundamental level, such as a **structural compound** or basic building block.
+
+The granularity of Entity Under Test(EUT)
+When we test UI, API, library, etc. we are actually testing structural component, it is just small component which is not deliverable. But as soon as we start testing something that is deliverable it is called feature e.g. function with two buttons, etc. something with which we can do something. 
+So when we comes to testing we need to have clarity on what exactly we are testing : 
+1. structural component - basic building block 
+2. techincal feature - basic offering from system 
+3. user requirement - enables an user to do task 
+4. business flow - a set of tasks by differnet users to accomplish a business objective
+
+When we break down what we are testing, it helps to think in layers of clarity. At the most basic level, we might be testing a **building block**—something like a UI element, a function, a class, an object, a small service, or a library. These pieces on their own do not deliver value; they are just structural compounds.
+
+As these building blocks come together and start offering a usable action—like a function combined with a couple of UI elements—they become a **feature**. This is something that a user can interact with and perform an action on.
+
+If that feature is tied directly to a **user need** or use case, then we are testing a **requirement**—something that fulfills a specific user expectation.
+
+And when multiple requirements or features are strung together to complete a meaningful task—like editing a document, running a spell check, and emailing it—that becomes a **business flow**.
+
+So, when we ask, "What exactly am I testing?" it helps to clarify whether we are working with a building block, a feature, a requirement, or a full flow. This kind of granularity sharpens our understanding and testing strategy.
+
+When we say business flow it means testing a set of tasks by different users that helps in achieveing business goals. 
+
+If we got lost in the early stage we miss the top , if we focus on top we miss the bottom so we need to have telescope and microscope at the same time.
+It will be difficult to have both, so while testing we need to have clarity on what exactly we are testing. Business flow, or user requirement or technical feature or structural component. And hence our everything like strategy, automation script should be well aligned accordingly.
+
+*We should not try to do everything with a single test case. For example, trying to catch a spelling mistake _and_ check an entire business flow in the same test case will make things unnecessarily complex—and difficult to automate. It is better to keep things focused and well-scoped.
+The first core idea is to be **clear about the entity** we are testing. When we receive a user story, we often assume it reflects a _requirement_. But in reality, many user stories feel more like upgraded features rather than clear requirements. That makes us pause and think—_Is this really my responsibility to test, or is something missing here?_
+In the bigger picture, every application is made up of **entities of different sizes and shapes**—some are building blocks, some are features, some are full requirements, and others are end-to-end flows. Understanding the granularity of what we are testing is key to designing better, more meaningful tests.*
+
+It is not just about the role we are assigned—it is about the **limited time** we have to test something effectively. If we are working within a fast-paced sprint and someone hands us a feature to validate, we need to be very clear about our **focus area**. Without that clarity, we risk spending our time on things that are not useful or relevant, which leads to inefficiency.
+
+For instance, if we start testing from the very bottom (like low-level components) when our responsibility is at the system level, we might never reach the top-level scenarios in time. That is why we must **clearly define boundaries**—what is in scope for us and what is not. Knowing what _not_ to test is just as important as knowing what to test.
+
+User stories should be like requirement, but mostly it looks like an upgraded feature. 
+We get a fetaure and limited amount of time to test so if we don't have clarity on what we are testing then we may miss the picture as well as the time.
+
+So we need to ensure that there are certain things that are not our responsibility which we need to do. Setting boundaries is important. We need to know what's our role. 
+
+In a fast-paced sprint, our challenge is **not just about roles or formal responsibilities**, but about **working wisely within limited time**. When we are asked to validate something, we must have a **clear mental model** of where our focus lies. Without this clarity, we risk spending effort on areas that are either **not our responsibility** or **not the best use of time**, leading to inefficiency.
+
+If we begin testing at the lowest level (like unit or integration) during a system-level test phase, we may never reach the broader flow-level validations in time. That is why setting **realistic and meaningful boundaries** is essential. We must know what **not to test**, and it should be clearly communicated—_this part is not mine, someone else is responsible for that._
+
+When boundaries are not respected or when assumptions are made like "you are the tester, so clean everything," we end up in flawed practices. And if defects are found later, especially those that should have been caught earlier, **blame starts circulating unnecessarily**. The idea of "escapes" (defects found after release) needs to be **understood in context**—not all escaped defects are the tester's fault.
+
+Ultimately, while quality is everyone’s responsibility, in practice, **responsibility needs structure**. Without clarity on what entities we are testing (UI, features, flows), or the kinds of defects we are supposed to find (UI bugs, integration issues, requirement mismatches), the system remains chaotic.
+
+To solve this, we must introduce structured thinking:
+
+-   **Entity granularities** – What exactly are we testing?
+    
+-   **Defect types** – What kinds of issues are we expected to catch?
+    
+-   **Quality levels** – At what level is this testing happening?
+    
+
+When these are understood, everything starts falling into place. Otherwise, it becomes a blame game dressed in the name of "shared responsibility."
+
+A major reason why defects slip through and testers get blamed later is because **many testers lack clarity on where to draw the line**. They often do not consciously identify _what type of entity they are testing_—whether it is a component, a feature, or a full business flow. This lack of structured thinking leads to **scattered and unfocused testing**.
+
+Most testers, even with around five years of experience, tend to mix different layers in their test cases. For example, when asked to test a business flow, their test cases might cover UI elements, back-end logic, and system components all together—without clearly anchoring to one level of testing. This ends up creating confusion and inefficiencies.
+
+What is really missing is a **formal, method-based approach to defining test scope**. The issue is not about manual versus automation—it is about not being taught or trained to identify and limit testing to specific granular entities. Over 85% of testers might be missing this understanding.
+
+This is not a criticism of testers—it is a gap in **education and systemic thinking**. If testers are guided to align their test design with the appropriate entity level (component, feature, requirement, business flow), the process becomes much more robust and predictable. Until then, many test cases will remain a mix of everything, and testing outcomes will remain unpredictable.
+
+*When we talk about quality, it is not just about checking things during validation. Quality exists at every stage. There is quality in the way a requirement is written, quality in how the code is implemented, and also quality in how it is tested. If all of these are handled properly, things work well. The product becomes stable and easy to work with.
+What stands out is that quality is not just one person's responsibility. Whether someone is a developer, a QA, or a product owner, everyone plays a part. If a bug comes up because the requirement was not clear, it is not fair to simply say it is a developer’s fault. It started with a gap in understanding.
+So instead of pointing fingers, it helps if we understand what kind of issue it is. This makes it easier to group the issues properly. That way, we can work on fixing the actual problem instead of blaming each other.
+When we look at bugs with this mindset, we focus more on how to avoid similar problems next time. And that makes our work stronger as a team.*
+
+
+**Fractional Distillation in S/W Testing**
+
+In school, we learned about different ways to separate mixtures in chemistry. There is filtration, evaporation, distillation, and fractional distillation. For example, if you mix sand and water, you can use a strainer. If it is salt and water, you let the water evaporate. And if it is oil, diesel, and petrol, you use fractional distillation by heating the mixture. Each part separates based on its boiling point.
+
+This simple idea inspired a deep thought about testing.
+
+*Think of any system under test as a mixture of bugs. These bugs are mixed in such a way that it is hard to spot them easily. Our job as testers is to separate and uncover them in a clean and efficient manner.*
+
+Now imagine if we had a tool like a fractional distillation column in testing. It would be great if business-level issues rise to the top and development-level or structural bugs stay at the bottom. This would help us focus on the right things at the right time.
+
+But in reality, leaders and managers are not always interested in how we do it. What they care about is the outcome. They want us to deliver value with less effort. Their focus is on results. They want fewer bugs in production, less support, and more customer satisfaction. If that happens, then they feel the work was done well.
+
+If the opposite happens, they will not say it directly, but it means something went wrong. No one will say the process is terrible, but the result speaks for itself. So we should not expect people to like us just because we followed a good method. What matters is the outcome.
+
+Now coming back to testing.
+
+Think of the system as having different types of issues. There are basic UI problems, behavior issues, attribute issues, and even deployment problems. If we divide them into different levels, we can design focused tests to find each type. This helps us reduce confusion and improves our chances of finding issues in a smarter way.
+
+This idea follows a simple principle. *Divide the problem and focus on one part at a time. It does not mean we will find everything in one go. Some issues will show up later. Some might be found by someone else. And that is fine.*
+
+Sometimes we work as a developer in the morning and as a tester in the afternoon. It is not about job titles. It is about the role we play and the mindset we carry. Once we understand our role well, we naturally become more careful. We try to prevent issues before they happen.
+
+And that is what we should aim for. That is the kind of awareness and discipline that makes us better at what we do.
+
+
+
+In the earlier parts, we talked about different types of entities and the idea of granularity. Then we explored the metaphor of distillation to separate different types of issues. Building on that, let us now shift our focus to the concept of _levels_.
+
+You might ask, why nine levels? The number is not that important. It could have been ten or eleven. But over many years of thinking and simplifying, nine just felt right. What matters more than the number is the idea itself—the idea that quality can be broken down into layers, into well-structured levels that make it easier for us to find, fix, and improve.
+
+So here is the thought: what if we looked at software quality as a staircase, where each step takes you closer to a better product?
+
+Le's explore each of these levels.
+
+**Level 1: Input Quality**  
+It all starts with inputs. If you give poor inputs, then everything that follows is likely to go wrong. You might remember this as "defensive programming" from the old days. The idea is simple: validate what comes in.
+
+**Level 2: Interface Quality**  
+Even if the inputs are good, the way they are passed matters. Say, I send the date and the month, but in the wrong order. Each value is fine, but the arrangement is incorrect. That is an interface-level issue.
+
+**Level 3: Structural Quality**  
+Now imagine the data is passed correctly, but internally, the structure is flawed. Maybe one thread reads the date and another reads the month, and due to poor handling, they go out of sync. This is not a behavioral issue—it is structural.
+
+**Level 4: Behavioral Quality (Individual)**  
+The structure is fine, but the system behaves incorrectly. It gives the wrong output. This is where the core logic is broken, even if the data flow looks clean.
+
+**Level 5: Behavioral Quality (Composite)**  
+Each part behaves well on its own, but when combined—say, in a travel app where discounts are calculated for senior citizens—it fails. This is an issue with composite behavior.
+
+**Level 6: Environment Compatibility**  
+Everything works well in your machine. But once you run it on another operating system or different hardware, something breaks. The behavior changes due to the environment.
+
+**Level 7: Attribute-Level Quality**  
+Now it works across environments, but is it fast enough? Is it secure? Is it reliable? Here we test non-functional aspects—performance, security, and more. These are attributes that shape the user's experience.
+
+**Level 8: Real-World Deployment**  
+The system runs fine in the lab. But once it is deployed with real customer data, things fall apart. Data might not migrate properly, or edge cases show up in live use. This is where the rubber meets the road.
+
+**Level 9: Business Value**  
+And finally, the most important one—the customer says, "Yes, this software is adding value to my business." It helps them save time, reduce costs, or grow their operations. This is the true success—the impact it makes in the real world.
+
+----------
+
+All these levels are not just boxes to check. They are perspectives—ways of seeing the product in layers. Most of these levels are under our control as engineers and testers. And if we get them right, we reach that final level where the customer says: _this software is not just working, it is working **for me**_.
